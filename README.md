@@ -5,8 +5,8 @@ Semua respons dari API ini dibungkus dalam format standar WebResponse dengan str
 Endpoint: POST /ktp
 
 Request Body (JSON):
-```
-JSON
+
+```JSON
 {
   "nomorKtp": "1234567887654321",
   "namaLengkap": "Orang",
@@ -17,7 +17,7 @@ JSON
 ```
 Success Response (201 CREATED):
 
-JSON
+```JSON
 {
   "code": 201,
   "status": "CREATED",
@@ -31,12 +31,13 @@ JSON
     "jenisKelamin": "Laki-laki"
   }
 }
+```
 2. Ambil Seluruh Data KTP
 Endpoint: GET /ktp
 
 Success Response (200 OK):
 
-JSON
+```JSON
 {
   "code": 200,
   "status": "OK",
@@ -52,6 +53,7 @@ JSON
     }
   ]
 }
+```
 3. Ambil Data KTP Berdasarkan ID
 Endpoint: GET /ktp/{id}
 
@@ -66,13 +68,14 @@ Request Body (JSON): Sama seperti format POST.
 
 Success Response (200 OK):
 
-JSON
+```JSON
 {
   "code": 200,
   "status": "OK",
   "message": "Data KTP berhasil diperbarui",
   "data": { ...data_terbaru... }
 }
+```
 Error Response (409 CONFLICT): Jika mengubah nomorKtp menjadi nomor yang sudah dipakai data lain.
 
 5. Hapus Data KTP
@@ -80,12 +83,13 @@ Endpoint: DELETE /ktp/{id}
 
 Success Response (200 OK):
 
-JSON
+```JSON
 {
   "code": 200,
   "status": "OK",
   "message": "Data KTP berhasil dihapus",
   "data": null
 }
+```
 
 SS tampilan web: 
