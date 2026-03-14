@@ -6,7 +6,7 @@ Endpoint: POST /ktp
 
 Request Body (JSON):
 
-JSON
+```JSON
 {
   "nomorKtp": "1234567887654321",
   "namaLengkap": "Orang",
@@ -14,6 +14,7 @@ JSON
   "tanggalLahir": "2026-03-11",
   "jenisKelamin": "Laki-laki"
 }
+```
 Success Response (201 CREATED):
 
 JSON
