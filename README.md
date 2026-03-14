@@ -5,8 +5,8 @@ Semua respons dari API ini dibungkus dalam format standar WebResponse dengan str
 Endpoint: POST /ktp
 
 Request Body (JSON):
-
-```JSON
+```
+JSON
 {
   "nomorKtp": "1234567887654321",
   "namaLengkap": "Orang",
