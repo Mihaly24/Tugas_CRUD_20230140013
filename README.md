@@ -92,4 +92,4 @@ Success Response (200 OK):
 }
 ```
 
-SS tampilan web: 
+![Tampilan Web CRUD KTP](ScreenshotWeb.png)
